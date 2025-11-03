@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background-color: white;
+  text-align: center;
+  padding: 16px 0;
+}
+
+header img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+nav {
+  background-color: #3d3801;
+  text-align: center;
+  padding: 12px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+nav a:hover {
+  color: #f0b400;
+}
+
+
+.contact {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: white;
+  max-width: 800px;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact h3 {
+  color: #c2980d;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.contact p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.contact a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.form {
+  text-align: center;
+  margin: 30px auto;
+}
+
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+}
+
+button {
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f0b400;
+  color: #000;
+}
+
+.follow {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.follow h2 {
+  color: #1a1a1a;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 20px;
+}
+
+.links a {
+  text-align: center;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.links img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.links p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .contact, form {
+    width: 90%;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .links img {
+    width: 50px;
+    height: 50px;
+  }
+}
