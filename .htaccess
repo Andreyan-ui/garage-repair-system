@@ -1,0 +1,15 @@
+Options -Indexes
+DirectoryIndex index.php
+
+<FilesMatch "\.(sql|md|log|ini|bak|dist)$">
+    Require all denied
+</FilesMatch>
+
+RedirectMatch 301 (?i)^(.*)/home\.html$ $1/index.php
+RedirectMatch 301 (?i)^(.*)/about\.html$ $1/about.php
+RedirectMatch 301 (?i)^(.*)/contact\.html$ $1/contact.php
+RedirectMatch 301 ^(.*)/book_service\.php$ $1/book.php
+RedirectMatch 301 ^(.*)/admin_login\.php$ $1/admin/login.php
+RedirectMatch 301 ^(.*)/admin_dashboard\.php$ $1/admin/index.php
+RedirectMatch 301 ^(.*)/view_bookings\.php$ $1/admin/bookings.php
+RedirectMatch 301 ^(.*)/(edit|update|delete)_booking\.php$ $1/admin/bookings.php
