@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Track a booking | Wycliffe Motors</title>
+<meta name="description" content="Wycliffe Motors: car servicing, repairs and roadside breakdown help. Book online and track your car.">
+<meta name="theme-color" content="#2b1d0e">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Wycliffe Motors">
+<meta property="og:title" content="Track a booking | Wycliffe Motors">
+<meta property="og:description" content="Wycliffe Motors: car servicing, repairs and roadside breakdown help. Book online and track your car.">
+<meta property="og:image" content="https://andreyan-ui.github.io/garage-repair-system/images/garage3.jpg">
+<meta property="og:image:width" content="720">
+<meta property="og:image:height" content="480">
+<meta property="og:url" content="https://andreyan-ui.github.io/garage-repair-system/track.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="images/brand/favicon.svg?v=1790797710" type="image/svg+xml">
+<link rel="icon" href="images/brand/favicon-32.png?v=1790797349" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="images/brand/apple-touch-icon.png?v=1790797352">
+<meta name="theme-color" content="#170f07">
+<link rel="stylesheet" href="css/style.css?v=1793281717">
+</head>
+<body class=""><div style="background:#fff5f3;border-bottom:1px solid #fde4e1;color:#8f1d14;padding:10px 20px;font:600 14px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:center">This is a static preview of the site. Booking, tracking and staff login need the PHP application installed.</div>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="emergency-bar">
+  <div class="container emergency-inner">
+    <p><strong>Broken down?</strong> <span class="hide-sm">We come to you, 24 hours a day, 7 days a week.</span></p>
+    <div class="emergency-actions">
+      <a href="tel:+256782006103">Call +256 782 006 103</a>
+      <a class="emergency-cta" href="breakdown.html">Get roadside help</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand brand-logo" href="index.html" data-brand-shine>
+      <img src="images/brand/wycliffe-horizontal-chrome.svg?v=1790797710" alt="Wycliffe Motors home" width="167" height="52">
+      <span class="brand-shine" aria-hidden="true"></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+      <span>Menu</span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul class="nav-links">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="faq.html">Self-help</a></li>
+                  <li><a href="track.html" class="is-active" aria-current="page">Track</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+      <div class="nav-actions">
+                  <a class="nav-account" href="login.html">Log in</a>
+                <a class="btn btn-primary btn-sm" href="book.html">Book a service</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-header">
+  <div class="container">
+    <p class="eyebrow">Track</p>
+    <h1>Track a booking or help request</h1>
+    <p class="lead">Enter the reference we gave you and the phone number you used.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container narrow">
+    <form method="post" class="card form-card" action="track.html">
+      <input type="hidden" name="csrf_token" value="8c643624a752a27d175f6efb064f3651291c503ccfd564bdf0503732fabd6004">      <input type="hidden" name="action" value="lookup">
+            <div class="field">
+        <label for="reference">Reference</label>
+        <input id="reference" name="reference" type="text" maxlength="20" autocapitalize="characters" autocomplete="off" required placeholder="BK-XXXXXXXX or BD-XXXXXXXX" value="">
+        <p class="hint">Booking references start with BK. Breakdown references start with BD.</p>
+      </div>
+      <div class="field">
+        <label for="phone">Phone number used</label>
+        <input id="phone" name="phone" type="tel" maxlength="20" autocomplete="tel" inputmode="tel" required placeholder="0772 123 456" value="">
+      </div>
+      <button type="submit" class="btn btn-dark btn-block">Find my booking</button>
+    </form>
+    <p class="center muted">
+              Have an account? <a href="login.html?next=account.php">Log in</a> to see all your bookings.
+          </p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="images/brand/wycliffe-logo.svg?v=1790797710" alt="Wycliffe Motors" width="150" height="179">
+      <p>Get back on the road. Reliable, affordable repairs and roadside help.</p>
+    </div>
+    <div>
+      <h2>Opening hours</h2>
+      <dl class="hours">
+                  <div><dt>Monday to Friday</dt><dd>8:00am - 6:00pm</dd></div>
+                  <div><dt>Saturday</dt><dd>8:00am - 4:00pm</dd></div>
+                  <div><dt>Sunday</dt><dd>Closed</dd></div>
+                <div><dt>Breakdown help</dt><dd>24 hours a day, 7 days a week</dd></div>
+      </dl>
+    </div>
+    <div>
+      <h2>Contact</h2>
+      <ul class="footer-list">
+        <li><a href="tel:+256782006103">+256 782 006 103</a></li>
+        <li><a href="https://wa.me/256782006103" rel="noopener" target="_blank">WhatsApp us</a></li>
+        <li><a href="mailto:andreyanauto@gmail.com">andreyanauto@gmail.com</a></li>
+        <li>Kampala, Uganda</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Quick links</h2>
+      <ul class="footer-list">
+        <li><a href="book.html">Book a service</a></li>
+        <li><a href="breakdown.html">Breakdown help</a></li>
+        <li><a href="faq.html">Self-help guides</a></li>
+        <li><a href="track.html">Track a booking</a></li>
+        <li><a href="index.html">My account</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 Wycliffe Motors. All rights reserved.</p>
+    <a href="index.html">Staff login</a>
+  </div>
+</footer>
+
+<nav class="mobile-actions" aria-label="Quick actions">
+  <a href="tel:+256782006103">Call us</a>
+  <a class="is-danger" href="breakdown.html">Breakdown</a>
+  <a class="is-primary" href="book.html">Book</a>
+</nav>
+
+<script src="js/app.js?v=1793281990" defer></script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a service | Wycliffe Motors</title>
+<meta name="description" content="Wycliffe Motors: car servicing, repairs and roadside breakdown help. Book online and track your car.">
+<meta name="theme-color" content="#2b1d0e">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Wycliffe Motors">
+<meta property="og:title" content="Book a service | Wycliffe Motors">
+<meta property="og:description" content="Wycliffe Motors: car servicing, repairs and roadside breakdown help. Book online and track your car.">
+<meta property="og:image" content="https://andreyan-ui.github.io/garage-repair-system/images/garage3.jpg">
+<meta property="og:image:width" content="720">
+<meta property="og:image:height" content="480">
+<meta property="og:url" content="https://andreyan-ui.github.io/garage-repair-system/book.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="images/brand/favicon.svg?v=1790797710" type="image/svg+xml">
+<link rel="icon" href="images/brand/favicon-32.png?v=1790797349" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="images/brand/apple-touch-icon.png?v=1790797352">
+<meta name="theme-color" content="#170f07">
+<link rel="stylesheet" href="css/style.css?v=1793281717">
+</head>
+<body class="page-book"><div style="background:#fff5f3;border-bottom:1px solid #fde4e1;color:#8f1d14;padding:10px 20px;font:600 14px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:center">This is a static preview of the site. Booking, tracking and staff login need the PHP application installed.</div>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="emergency-bar">
+  <div class="container emergency-inner">
+    <p><strong>Broken down?</strong> <span class="hide-sm">We come to you, 24 hours a day, 7 days a week.</span></p>
+    <div class="emergency-actions">
+      <a href="tel:+256782006103">Call +256 782 006 103</a>
+      <a class="emergency-cta" href="breakdown.html">Get roadside help</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand brand-logo" href="index.html" data-brand-shine>
+      <img src="images/brand/wycliffe-horizontal-chrome.svg?v=1790797710" alt="Wycliffe Motors home" width="167" height="52">
+      <span class="brand-shine" aria-hidden="true"></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+      <span>Menu</span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul class="nav-links">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="faq.html">Self-help</a></li>
+                  <li><a href="track.html">Track</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+      <div class="nav-actions">
+                  <a class="nav-account" href="login.html">Log in</a>
+                <a class="btn btn-primary btn-sm" href="book.html">Book a service</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-header has-photo">
+  <div class="container page-header-grid">
+    <div>
+      <p class="eyebrow">Book online</p>
+      <h1>Book a service</h1>
+      <p class="lead">Tell us what your car needs and when suits you. We will call to confirm the time.</p>
+    </div>
+    <figure class="page-header-figure"><img src="images/garage3.jpg?v=1789028143" alt="A friendly Wycliffe Motors mechanic" width="720" height="480" fetchpriority="high" decoding="async"></figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container layout-sidebar">
+    <div>
+              <div class="alert alert-info">
+          Have an account? <a href="login.html?next=book.php">Log in</a> to use your saved vehicles and see all your bookings in one place.
+          No account? No problem, you can still book below.
+        </div>
+      
+            <form method="post" class="card form-card" data-once>
+        <input type="hidden" name="csrf_token" value="d113e285e814ea43d231af57956b10359feae71f1283bc4fce02ab69a01afb3e">        <div class="hp" aria-hidden="true"><label>Leave this field empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>        
+        <fieldset class="form-section">
+          <legend><span class="step-number">1</span> What does your car need?</legend>
+          <div class="field">
+            <label for="service_id">Service</label>
+            <select id="service_id" name="service_id" required>
+              <option value="">Choose a service</option>
+                              <option value="1">General Service</option>
+                              <option value="2">Oil Change</option>
+                              <option value="3">Diagnostics</option>
+                              <option value="4">Brake Repair</option>
+                              <option value="5">Engine Repair</option>
+                              <option value="6">Battery Service</option>
+                              <option value="7">Wheel Alignment</option>
+                              <option value="8">Tyre Rotation &amp; Replacement</option>
+                              <option value="9">Suspension &amp; Exhaust</option>
+                              <option value="10">Car Electrical Repair</option>
+                              <option value="11">Car Painting</option>
+                              <option value="12">Pre-Purchase Inspection</option>
+                          </select>
+                      </div>
+          <div class="field">
+            <label for="message">Describe the problem <span class="optional">optional</span></label>
+            <textarea id="message" name="message" rows="3" maxlength="2000" placeholder="e.g. Squeaking noise when braking, worse in the morning"></textarea>
+                      </div>
+        </fieldset>
+
+        <fieldset class="form-section">
+          <legend><span class="step-number">2</span> When would you like to come in?</legend>
+          <div class="field-row">
+            <div class="field">
+              <label for="preferred_date">Date</label>
+              <input id="preferred_date" name="preferred_date" type="date" min="2026-10-30" max="2026-12-29" required value="">
+                              <p class="hint">We are closed on Sundays.</p>
+                                        </div>
+            <div class="field">
+              <span class="label">Time of day</span>
+              <div class="choice-row">
+                                  <label class="choice choice-inline">
+                    <input type="radio" name="preferred_slot" value="morning" required>
+                    <span>Morning <small>8am - 12pm</small></span>
+                  </label>
+                                  <label class="choice choice-inline">
+                    <input type="radio" name="preferred_slot" value="afternoon" required>
+                    <span>Afternoon <small>12pm - 4pm</small></span>
+                  </label>
+                              </div>
+                          </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-section">
+          <legend><span class="step-number">3</span> Which car?</legend>
+                      <input type="hidden" name="vehicle_id" value="new">
+          
+          <div class="new-vehicle" data-new-vehicle>
+            <div class="field">
+              <label for="vehicle_plate">Number plate</label>
+              <input id="vehicle_plate" name="vehicle_plate" type="text" maxlength="15" autocapitalize="characters" placeholder="UBA 123K" value="" required>
+                          </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="vehicle_make">Make</label>
+                <input id="vehicle_make" name="vehicle_make" type="text" maxlength="50" placeholder="Toyota" value="" required>
+                              </div>
+              <div class="field">
+                <label for="vehicle_model">Model</label>
+                <input id="vehicle_model" name="vehicle_model" type="text" maxlength="50" placeholder="Premio" value="" required>
+                              </div>
+            </div>
+                      </div>
+        </fieldset>
+
+        <fieldset class="form-section">
+          <legend><span class="step-number">4</span> Your contact details</legend>
+          <div class="field-row">
+            <div class="field">
+              <label for="contact_name">Full name</label>
+              <input id="contact_name" name="contact_name" type="text" maxlength="100" autocomplete="name" required value="">
+                          </div>
+            <div class="field">
+              <label for="contact_phone">Phone number</label>
+              <input id="contact_phone" name="contact_phone" type="tel" maxlength="20" autocomplete="tel" inputmode="tel" required placeholder="0772 123 456" value="">
+                          </div>
+          </div>
+          <div class="field">
+            <label for="contact_email">Email <span class="optional">optional</span></label>
+            <input id="contact_email" name="contact_email" type="email" maxlength="150" autocomplete="email" value="">
+                      </div>
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary btn-lg btn-block" data-busy="Sending your booking...">Send booking request</button>
+        <p class="hint center">You will get a booking reference so you can track it online.</p>
+      </form>
+          </div>
+
+    <aside class="sidebar">
+      <div class="card">
+        <h2>What happens next</h2>
+        <ol class="how-steps compact">
+          <li><strong>We call you</strong><span>to confirm the day and time.</span></li>
+          <li><strong>Bring your car in</strong><span>at the agreed time.</span></li>
+          <li><strong>Track progress</strong><span>online with your booking reference.</span></li>
+        </ol>
+      </div>
+      <div class="card">
+        <h2>Opening hours</h2>
+        <dl class="hours">
+                      <div><dt>Monday to Friday</dt><dd>8:00am - 6:00pm</dd></div>
+                      <div><dt>Saturday</dt><dd>8:00am - 4:00pm</dd></div>
+                      <div><dt>Sunday</dt><dd>Closed</dd></div>
+                  </dl>
+      </div>
+      <div class="card card-danger">
+        <h2>Car won't move?</h2>
+        <p>Don't drive a car that isn't safe. We can come to you.</p>
+        <a class="btn btn-danger btn-block" href="breakdown.html">Get roadside help</a>
+      </div>
+    </aside>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="images/brand/wycliffe-logo.svg?v=1790797710" alt="Wycliffe Motors" width="150" height="179">
+      <p>Get back on the road. Reliable, affordable repairs and roadside help.</p>
+    </div>
+    <div>
+      <h2>Opening hours</h2>
+      <dl class="hours">
+                  <div><dt>Monday to Friday</dt><dd>8:00am - 6:00pm</dd></div>
+                  <div><dt>Saturday</dt><dd>8:00am - 4:00pm</dd></div>
+                  <div><dt>Sunday</dt><dd>Closed</dd></div>
+                <div><dt>Breakdown help</dt><dd>24 hours a day, 7 days a week</dd></div>
+      </dl>
+    </div>
+    <div>
+      <h2>Contact</h2>
+      <ul class="footer-list">
+        <li><a href="tel:+256782006103">+256 782 006 103</a></li>
+        <li><a href="https://wa.me/256782006103" rel="noopener" target="_blank">WhatsApp us</a></li>
+        <li><a href="mailto:andreyanauto@gmail.com">andreyanauto@gmail.com</a></li>
+        <li>Kampala, Uganda</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Quick links</h2>
+      <ul class="footer-list">
+        <li><a href="book.html">Book a service</a></li>
+        <li><a href="breakdown.html">Breakdown help</a></li>
+        <li><a href="faq.html">Self-help guides</a></li>
+        <li><a href="track.html">Track a booking</a></li>
+        <li><a href="index.html">My account</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 Wycliffe Motors. All rights reserved.</p>
+    <a href="index.html">Staff login</a>
+  </div>
+</footer>
+
+<nav class="mobile-actions" aria-label="Quick actions">
+  <a href="tel:+256782006103">Call us</a>
+  <a class="is-danger" href="breakdown.html">Breakdown</a>
+  <a class="is-primary" href="book.html">Book</a>
+</nav>
+
+<script src="js/app.js?v=1793281990" defer></script>
+</body>
+</html>
